@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Mustache Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <script>
+    window.onload = function() {
+      startup();
+    }
+  </script>
+<body>
+
+<!-- header with the cart at the top right-->
+<h1>
+    <div class="itemsList" style="float:right;">
+      <button class="cartBtn">My Cart (4)</button>
+      <div class="itemsContent">
+          <a>
+            <img class="cartClothes" src="classic-tee.jpg" alt="Italian Trulli">
+            <div id="itemDescription">
+              <p>Classic Tee</p>
+              <p>1x $75.00 </p>
+              <p>Size: S</p>
+            </div>
+          </a>
+          <a>
+            <img class="cartClothes" src="classic-tee.jpg" alt="Italian Trulli">
+            <div id="itemDescription">
+              <p>Classic Tee</p>
+              <p>3x $75.00</p>
+              <p>Size: L</p>
+            </div>
+          </a>
+      </div>
+    </div>
+  </br>
+</h1>
+
+<!--main content of the page which includes the shirt, price, description, size and add to cart button-->
+<div class="content">
+<div>
+ <img class="clothes" src="classic-tee.jpg" alt="Italian Trulli">
+</div>
+
+<div class="box">
+  <h2>
+    Classic Tee
+  </h2>
+  <h3>
+    $75.00
+  </h3>
+  <article class="description">
+    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+  </article>
+
+  <p> SIZE <span style="color:#C90000">*</span><span id="showSize"> S </span></p>
+
+  <div>
+    <table class="sizes">
+      <tr>
+        <td onclick="chooseSize()" id="sizeS"> S </td>
+        <td id="sizeM"> M </td>
+        <td id="sizeL"> L </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="addToCart" onclick="addToCart()">
+    <p>ADD TO CART</p>
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
